@@ -142,9 +142,9 @@ for (i = 0; i < hashtag.length; i++) {
 
 
 var string = "#"
-for (var i = 0; i < 8; i++ ) {
-  string += "#";
-  console.log(string);
+for (var i = 0; i < 8; i++) {
+    string += "#";
+    console.log(string);
 }
 console.log(string);
 
@@ -189,70 +189,81 @@ for (i = 0; i < 100; i++) {
 
 
 
-            // ADVANCED TRACK
-            // 16. Write a conditional statement to find the largest of the numbers in the array provided.
-            var num = [-5, -2, -6, 0, -1];
-            var largestNum = -5;
+// ADVANCED TRACK
+// 16. Write a conditional statement to find the largest of the numbers in the array provided.
+var num = [-5, -2, -6, 0, -1];
+var largestNum = -5;
 
-            for (i = 1; i < num.length; i++) {
-                if (num[i] > largestNum) {
-                    largestNum = num[i];
-                }
-            }
+for (i = 1; i < num.length; i++) {
+    if (num[i] > largestNum) {
+        largestNum = num[i];
+    }
+}
 
 
-            var numSort = [-5,-2, -6, 0, -1];
-            numSort.sort(function(a,b) {
-              return   a - b
-            });
-
-          
+var numSort = [-5, -2, -6, 0, -1];
+numSort.sort(function(a, b) {
+    return a - b
+});
 
 
 
+// HEADS OR TAILS?
+// 17. Use the following variable for your coin flip action:
 
-            // HEADS OR TAILS?
-            // 17. Use the following variable for your coin flip action:
-            // var coin = Math.floor(Math.random() * 2);
-            //     We're using Math.random again, along with Math.floor.
-            //     Remember, Math.random gives you a random number between 0 and 1.
-            //     Calling Math.floor on that number will truncate the decimal, and give you a
-            //     random number within the bounds of your array. (In this case, our array will only contain two items.)
-
+//     We're using Math.random again, along with Math.floor.
+//     Remember, Math.random gives you a random number between 0 and 1.
+//     Calling Math.floor on that number will truncate the decimal, and give you a
+//     random number within the bounds of your array. (In this case, our array will only contain two items.)
 
 
+var coin = Math.floor(Math.random() * 2);
+var flip = ["head", "tail"];
+var outcome;
+
+for (var i = 0; i < flip.length; i++) {
+  if(coin === 0 ) {
+    outcome = flip[0];
+  }else if(coin === 1) {
+    outcome = flip[1];
+  }
+}
+console.log(outcome);
+
+document.getElementById('q17').innerHTML = outcome;
 
 
 
-            // 18. Use a do/while loop to keep flipping the coin until you get tails.
 
-
-
-
-
-
-            // CHESS BOARD
-            // 19. Write a program that creates a string that represents an 8×8 grid, using newline characters to separate lines.
-            // At each position of the grid there is either a space or a “#” character. The characters should form a chess board.
-
-            //Passing this string to console.log should show something like this:
-
-            //  # # # #
-            // # # # #
-            //  # # # #
-            // # # # #
-            //  # # # #
-            // # # # #
-            //  # # # #
-            // # # # #
+// 18. Use a do/while loop to keep flipping the coin until you get tails.
 
 
 
 
 
 
-            // 20. When you have a program that generates this pattern, define a variable size = 8 and change the program
-            // sso that it works for any size, outputting a grid of the given width and height.
+// CHESS BOARD
+// 19. Write a program that creates a string that represents an 8×8 grid, using newline characters to separate lines.
+// At each position of the grid there is either a space or a “#” character. The characters should form a chess board.
+
+//Passing this string to console.log should show something like this:
+
+//  # # # #
+// # # # #
+//  # # # #
+// # # # #
+//  # # # #
+// # # # #
+//  # # # #
+// # # # #
+
+
+
+
+
+
+// 20. When you have a program that generates this pattern, define a variable size = 8 and change the program
+// sso that it works for any size, outputting a grid of the given width and height.
 
 
 
@@ -262,13 +273,13 @@ for (i = 0; i < 100; i++) {
 
 
 
-            /* SANDBOX TRACK
+/* SANDBOX TRACK
 
-            Solving all of these problems is a great step in the right direction,
-            but the next step is coming up with your own arrangements to solve
-            new problems. Practice creating your own problems to solve and their solutions -
-            you can even challenge your classmates!
+Solving all of these problems is a great step in the right direction,
+but the next step is coming up with your own arrangements to solve
+new problems. Practice creating your own problems to solve and their solutions -
+you can even challenge your classmates!
 
-            Also, consider how you can add/remove CSS styles to create added presentation with the results.
+Also, consider how you can add/remove CSS styles to create added presentation with the results.
 
-            */
+*/
