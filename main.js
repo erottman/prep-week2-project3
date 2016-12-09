@@ -222,11 +222,11 @@ var flip = ["head", "tail"];
 var outcome;
 
 for (var i = 0; i < flip.length; i++) {
-  if(coin === 0 ) {
-    outcome = flip[0];
-  }else if(coin === 1) {
-    outcome = flip[1];
-  }
+    if (coin === 0) {
+        outcome = flip[0];
+    } else if (coin === 1) {
+        outcome = flip[1];
+    }
 }
 console.log(outcome);
 
@@ -257,17 +257,19 @@ document.getElementById('q17').innerHTML = outcome;
 //  # # # #
 // # # # #
 var string = "#";
-var chessBoard = "";
+var chessBoardOne = "";
+var chessBoardTwo = "";
+var chessBoardTotal = "";
 
-for(var i = 0; i < 8; i++) {
-  chessBoard += "#"; {
-    for (var j = 0; j < 8; j++) {
-      chessBoard += " ";
-    }
-  }
-};
-console.log(chessBoard);
+for (var i = 0; i < 4; i++) {
+    chessBoardOne = " # # # #";
+    console.log(chessBoardOne);
+    chessBoardTwo = "# # # # ";
+    console.log(chessBoardTwo);
+  };
+  console.log(chessBoardTotal = chessBoardOne + chessBoardTwo);
 
+document.getElementById('q18').innerHTML =chessBoardTotal;
 
 
 
