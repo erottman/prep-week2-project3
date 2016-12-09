@@ -297,10 +297,10 @@ for (var i = 0; i < 64; i++) {
     } else if (i % 16 === 0) {
       chessBoard += " ";
       document.getElementById('q19').innerHTML +=  "&nbsp&nbsp";
-    }else (
+    }else {
       chessBoard += "#";
-      document.getElementById('q20').innerHTML += "#";
-    )
+      document.getElementById('q19').innerHTML += "#";
+    }
 };
 
 
@@ -312,19 +312,20 @@ var chessBoardHTML = "";
 var size = 12;
 
 for(var height = 0; height < size; height++) {
-  if(width + height) % 2 === 0) {
+  for(var width = 0; width < size; width++)
+  if ((width + height) % 2 === 0) {
     chessBoard += " ";
     chessBoardHTML += "&nbsp&nbsp";
   }else {
-    chessBoard += "#"
+    chessBoard += "#";
     chessBoardHTML += "#";
   }
     chessBoard += "\n";
     chessBoard += "<p></p>";
   }
-}
+
 console.log(chessBoard);
-document.getElementById('q20'.innerHTML) = "</li>" chessBoard"</li>"
+document.getElementById('q20').innerHTMLs = "<li>" + chessBoard + "</li>"
 
 
 
