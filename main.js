@@ -256,7 +256,17 @@ document.getElementById('q17').innerHTML = outcome;
 // # # # #
 //  # # # #
 // # # # #
+var string = "#";
+var chessBoard = "";
 
+for(var i = 0; i < 8; i++) {
+  chessBoard += "#"; {
+    for (var j = 0; j < 8; j++) {
+      chessBoard += " ";
+    }
+  }
+};
+console.log(chessBoard);
 
 
 
