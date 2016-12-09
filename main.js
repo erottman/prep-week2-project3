@@ -146,6 +146,7 @@ for (var i = 0; i < 8; i++ ) {
   string += "#";
   console.log(string);
 }
+console.log(string);
 
 // 9. FIZZ BUZZ
 // Write a program that uses console.log to print each number up to 100, with a couple exceptions...
@@ -200,6 +201,9 @@ for (i = 0; i < 100; i++) {
             }
             document.getElementById('q16').innerHTML = largestNum;
             console.log(largestNum);
+
+            var numSort = [-5,-2,-4];
+
 
 
 
