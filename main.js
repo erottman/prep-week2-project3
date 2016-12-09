@@ -230,7 +230,7 @@ for (var i = 0; i < flip.length; i++) {
 }
 console.log(outcome);
 
-document.getElementById('q17').innerHTML = outcome;
+document.getElementById('q17').innerHTML = "</li" > +outcome + "</li>";
 
 
 
@@ -238,6 +238,20 @@ document.getElementById('q17').innerHTML = outcome;
 // 18. Use a do/while loop to keep flipping the coin until you get tails.
 
 
+
+do {
+    var coin = Math.floor(Math.random() * 2);
+
+    if (coin === 0) {
+        var side = "heads";
+
+    } else {
+        var side = "tails";
+    }
+    console.log(side);
+    document.getElementById('q18').innerHTML += "</li>" + side + "</li>";
+
+} while (coin === 0);
 
 
 
@@ -259,27 +273,58 @@ document.getElementById('q17').innerHTML = outcome;
 var string = "#";
 var chessBoardOne = "";
 var chessBoardTwo = "";
-var chessBoardTotal = "";
 
 for (var i = 0; i < 4; i++) {
     chessBoardOne = " # # # #";
     console.log(chessBoardOne);
     chessBoardTwo = "# # # # ";
     console.log(chessBoardTwo);
-  };
-  console.log(chessBoardTotal = chessBoardOne + chessBoardTwo);
+};
 
-document.getElementById('q18').innerHTML =chessBoardTotal;
+var chessBoard = "";
+var size = 8;
 
+for (var i = 0; i < 64; i++) {
 
+    if (i % 2 === 0) {
+        chessBoard += " ";
+        document.getElementById('q19').innerHTML += "&nbsp&nbsp";
+
+    } else if (i % 8 === 0) {
+        chessBoard += "\n" ;
+        document.getElementById('q19').innerHTML += "<p></p>";
+
+    } else if (i % 16 === 0) {
+      chessBoard += " ";
+      document.getElementById('q19').innerHTML +=  "&nbsp&nbsp";
+    }else (
+      chessBoard += "#";
+      document.getElementById('q20').innerHTML += "#";
+    )
+};
 
 
 // 20. When you have a program that generates this pattern, define a variable size = 8 and change the program
 // sso that it works for any size, outputting a grid of the given width and height.
 
+var chessBoard = "";
+var chessBoardHTML = "";
+var size = 12;
 
-
-
+for(var height = 0; height < size; height++) {
+  if(width + height) % 2 === 0) {
+    chessBoard += " ";
+    chessBoardHTML += "&nbsp&nbsp";
+  }else {
+    chessBoard += "#"
+    chessBoardHTML += "#";
+  }
+    chessBoard += "\n";
+    chessBoard += "<p></p>";
+  }
+}
+console.log(chessBoard);
+document.getElementById('q20'.innerHTML) = "</li>" chessBoard"</li>"
 
 
 
