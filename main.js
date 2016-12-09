@@ -202,7 +202,7 @@ for (i = 0; i < 100; i++) {
             document.getElementById('q16').innerHTML = largestNum;
             console.log(largestNum);
 
-            var numSort = [-5,-2,-4];
+            var numSort = [-5,-3,-4];
 
 
 
