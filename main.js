@@ -191,18 +191,22 @@ for (i = 0; i < 100; i++) {
 
             // ADVANCED TRACK
             // 16. Write a conditional statement to find the largest of the numbers in the array provided.
-            var num = [-5, -2, -6, 0, -1]
-            var largestNum;
+            var num = [-5, -2, -6, 0, -1];
+            var largestNum = -5;
 
-            for (i = 0; i < num.length; i++) {
+            for (i = 1; i < num.length; i++) {
                 if (num[i] > largestNum) {
                     largestNum = num[i];
                 }
             }
-            document.getElementById('q16').innerHTML = largestNum;
-            console.log(largestNum);
 
-            var numSort = [-5,-3,-4];
+
+            var numSort = [-5,-2, -6, 0, -1];
+            numSort.sort(function(a,b) {
+              return   a - b
+            });
+
+          
 
 
 
